@@ -9,3 +9,8 @@ name = "dsa"
 version = "1.0.0"
 dependencies = [
 ]
+
+[project.optional-dependencies]
+dev = [
+    "pytest"
+]
