@@ -6,7 +6,7 @@ def selection_sort(input_list):
         return []
 
     for element in input_list:
-        if not isinstance(element, int):
+        if type(element) is not int:
             raise TypeError('Only integers are allowed in the input list')
 
     working_list = copy.deepcopy(input_list)
