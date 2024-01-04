@@ -2,11 +2,21 @@ import copy
 
 
 def selection_sort(input_list):
+    """
+    Implements selection sort algorithm for array of integers
+
+    Args:
+        input_list: target list containing integers
+    Returns:
+        Sorted list of integers
+    Raises:
+        TypeError if any element of input list is not an integer
+    """
     if input_list == []:
         return []
 
     for element in input_list:
-        if type(element) is not int:
+        if not isinstance(element, int):
             raise TypeError('Only integers are allowed in the input list')
 
     working_list = copy.deepcopy(input_list)

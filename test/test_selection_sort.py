@@ -42,4 +42,3 @@ def test_that_input_list_not_mutated():
 def test_type_error_raised_if_input_contains_non_integers():
     with pytest.raises(TypeError, match='Only integers are allowed'):
         selection_sort([2, 8, 'b', 9, 1])
-

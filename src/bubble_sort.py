@@ -6,7 +6,7 @@ def bubble_sort(input_list):
     Implements bubble sort algorithm for array of integers
 
     Args:
-        input_array: target list containing integers
+        input_list: target list containing integers
     Returns:
         Sorted list of integers
     Raises:
